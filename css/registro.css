@@ -2,6 +2,13 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+.logoX{
+    padding-left: 5%;
+}
+.registro{
+    padding: 5%
+}
+
 .title {
     text-align: start;
     font-size: 64px;
