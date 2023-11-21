@@ -29,21 +29,31 @@
                   <p class="mb-4 fw-bold" style="font-size: 40px!important;">Únete hoy</p>
                   
                   <form>
+
+                    <div class="alert alert-dismissible hide fade alert-danger d-flex align-items-center" role="alert">  
+                      <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:">
+                      <use xlink:href="#exclamation-triangle-fill"/>
+                      </svg> 
+                      <div class="text-center">
+                          Faltan algunos campos!! 
+                      </div>
+                    </div>
+
                     <!-- Email input -->
                     <div class="form-outline mb-4">
-                      <input type="email" id="email" class="form-control form-control-lg" />
+                      <input type="email" id="email" class="form-control form-control-lg" placeholder="Escribe tu correo electrónico"/>
                       <label class="form-label" for="email">Email address</label>
                     </div>
           
                     <!-- Password input -->
                     <div class="form-outline mb-4">
-                      <input type="password" id="password" class="form-control form-control-lg" />
+                      <input type="password" id="password" class="form-control form-control-lg" placeholder="Escribe tu contraseña"/>
                       <label class="form-label" for="password">Password</label>
                     </div>
           
                     <!-- Submit button -->
                     <div class="d-grid gap-2">
-                      <button type="submit" class="btn btn-lg rounded-pill mb-2" style="background-color: #00acee; color: #ffffff;">Sign in</button>
+                      <button id="btnLogin" type="submit" class="btn btn-lg rounded-pill mb-2" style="background-color: #00acee; color: #ffffff;">Sign in</button>
                     </div>
                     
                     <a class="btn btn-lg rounded-pill d-block mb-2" style="background-color: #00acee; color: #ffffff;"  href="#!"
@@ -54,16 +64,18 @@
                       role="button">
                       <i class="fab fa-apple me-2"></i>Continue with Apple
                     </a>
-
                     <hr>
-
                     <p class="m-4 fs-4">¿Aún no tienes una cuenta? <a class="linkRegistro" href="registro.html">Registrate.</a></p>
-                  
                   </form>
+
+                  
                 </div>
               </div>
             </div>
         </section>
     </div>
+
+
+  <script src="./js/login.js"></script>
 </body>
 </html>
