@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () =>{
+/*document.addEventListener('DOMContentLoaded', () =>{
     window.onload = function() {
         var diaSelect = document.getElementById('dia');
         var mesSelect = document.getElementById('mes');
@@ -17,4 +17,4 @@ document.addEventListener('DOMContentLoaded', () =>{
             anoSelect.innerHTML += `<option value="${i}">${i}</option>`;
         }
     }
-})
+})*/
