@@ -35,59 +35,40 @@
     </div>
     <div class="col-7">
       <h1 class="title mt-5 ">Crea tu cuenta</h1>
-      <form action="">
+      <form action="./Backend/Files/registrar.php" method="post">
         <!-- nombre -->
         <div class="mb-3 rounded">
-          <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+          <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
         </div>
         <!-- a -->
         <div class="mb-3 rounded">
-          <input type="text" class="form-control" id="apellidos" placeholder="Apellidos">
-        </div>
-        <!-- usuario -->
-        <div class="mb-3 rounded">
-          <input type="text" class="form-control" id="usuario" placeholder="Usuario">
+          <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Apellidos">
         </div>
         <!-- correo -->
         <div class="mb-3 rounded">
-          <input type="email" class="form-control" id="correo" placeholder="Correo">
+          <input type="email" class="form-control" name="email" id="email" placeholder="Correo">
+        </div>
+        <!-- usuario -->
+        <div class="mb-3 rounded">
+          <input type="text" class="form-control" name="usuario" id="usuario" placeholder="Usuario">
         </div>
         <!-- contraseña -->
         <div class="mb-3 rounded">
-          <input type="password" class="form-control" id="password" placeholder="Contraseña">
+          <input type="password" class="form-control" name="password" id="password" placeholder="Contraseña">
         </div>
-        <!-- aviso de privasidad -->
-        <div class="aviso-privasidad">
+        <!-- aviso de privacidad -->
+        <div class="aviso-privacidad">
           <h3>Fecha de nacimiento</h3>
           <p>Esta información no será pública. Confirma tu propia edad, incluso si esta cuenta es para una empresa, una mascota u otra cosa.</p>
         </div>
         <!-- fecha de nacimiento -->
-        <div class="row">
-          <div class="col mb-3 rounded">
-            <select class="form-control" id="dia">
-              <option value="">Día</option>
-              <!-- Las opciones se generarán dinámicamente -->
-            </select>
-          </div>
-          <div class="col mb-3 rounded">
-            <select class="form-control" id="mes">
-              <option value="">Mes</option>
-              <!-- Las opciones se generarán dinámicamente -->
-            </select>
-          </div>
-          <div class="col mb-3 rounded">
-            <select class="form-control" id="ano">
-              <option value="">Año</option>
-              <!-- Las opciones se generarán dinámicamente -->
-            </select>
-          </div>
+        <div class="mb-3 rounded">
+          <input type="text" class="form-control" name="fecha_nacimiento" id="fecha_nacimiento" placeholder="AAAA/MM/DD">
         </div>
        
           <div class="d-grid gap-2">
-            <button class="btn btn-lg rounded-pill mb-2" style="background-color:  #00acee; color: #ffffff;">Crear</button>
+            <button type="submit" class="btn btn-lg rounded-pill mb-2" style="background-color:  #00acee; color: #ffffff;">Crear</button>
           </div>
-      
-
         <hr>
 
         <p class="m-4 fs-4">¿Ya tienes una cuenta? <a class="linkRegistro" href="index.html">Inicia Sesión.</a></p>
